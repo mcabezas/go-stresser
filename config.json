@@ -1,0 +1,26 @@
+{
+  "endpoints": [
+    {
+      "name": "user-accounts",
+      "body": "{\"query\":\"query Q { user { accounts { id, balance, lastUpdatedAt} } }\", \"variables\": \"\" }"
+    }
+  ],
+  "default": {
+    "headers": [
+      {
+        "key": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "key": "userID",
+          "value": "8b6b03d4-3919-4271-9069-d591815fa03a"
+      },
+      {
+        "key": "groups",
+        "value": "DEV-customer_support"
+      }
+    ],
+    "url": "http://hubdesa.brubank.ad:9080/graphql",
+    "method": "POST"
+  }
+}
